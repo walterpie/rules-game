@@ -1,1 +1,1 @@
-# ginal-game
+# rules-game
