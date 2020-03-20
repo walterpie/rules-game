@@ -1,0 +1,3 @@
+(define (main)
+  (web/log "I'm alive!")
+  #nil)

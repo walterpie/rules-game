@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>gtkml-web - The interactive gtk-ml repl</title>
+    <script type="text/javascript">
+        Module = {
+            print: function(msg) {
+                document.getElementById('gtkml-stdout').value += msg;
+            },
+            printErr: function(msg) {
+                document.getElementById('gtkml-stderr').value += msg;
+            },
+        }
+    </script>
+    <script async type="text/javascript" src="gtk-ml.js"></script>
+    <script async type="text/javascript" src="gtkml-web.js"></script>
+    <style>
+    .dark-console-mono {
+        color: #f9e9d5;
+        background-color: #171824;
+        font-family: "Lucida Console", Monaco, monospace;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/index.html"><h1>gtk-ml</h1></a>
+    </header>
+
+    <textarea class="dark-console-mono" name="gtkml-input" id="gtkml-input" rows="16" cols="42">
